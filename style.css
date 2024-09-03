@@ -10,6 +10,9 @@ html.body{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
 
 main{
     overflow: hidden;
@@ -60,6 +63,7 @@ main{
     border-radius: 10px;
     width: 100%;
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .buttons:hover{
@@ -110,4 +114,91 @@ main{
     .buttons{
         padding: 20px 200px;
     }
+}
+
+/* Dialog Box Styles */
+.dialog-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.dialog-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Close Button */
+.close-dialog-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-dialog-btn:hover {
+    color: red;
+}
+
+.three-dots{
+    position: absolute;
+    right: 1%;
+    top: 25%;
+    padding: 4px 12px;
+    z-index: 10;
+    /* padding: 8px 16px; */
+    border-radius: 999px;
+}
+
+.three-dots:hover{
+    background-color: #414744;
+}
+
+.dialog-div{
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog-div:hover{
+    background-color: #eef4f1;
+
+}
+
+.copy-div{
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.copy-div:hover{
+    background-color: #eef4f1;
+
+}
+
+.second-div{
+    display: flex;
+    align-items: center;
+    width: 20px;
+}
+
+.message{
+    width: 30px;
 }
